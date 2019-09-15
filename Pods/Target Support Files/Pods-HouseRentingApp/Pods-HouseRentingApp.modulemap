@@ -1,0 +1,6 @@
+framework module Pods_HouseRentingApp {
+  umbrella header "Pods-HouseRentingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

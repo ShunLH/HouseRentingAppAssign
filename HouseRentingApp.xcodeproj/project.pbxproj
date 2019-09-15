@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69B7440EF57A0C86FB9C934F /* Pods_HouseRentingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5E85EAC04F2FDDC430B575 /* Pods_HouseRentingApp.framework */; };
+		EF003A7623294061006BB83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A7523294061006BB83F /* AppDelegate.swift */; };
+		EF003A7823294061006BB83F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A7723294061006BB83F /* HomeViewController.swift */; };
+		EF003A7B23294061006BB83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF003A7923294061006BB83F /* Main.storyboard */; };
+		EF003A7D23294063006BB83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF003A7C23294063006BB83F /* Assets.xcassets */; };
+		EF003A8023294063006BB83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF003A7E23294063006BB83F /* LaunchScreen.storyboard */; };
+		EF003A90232943CF006BB83F /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A8F232943CF006BB83F /* SharedConstants.swift */; };
+		EF003A94232943F5006BB83F /* HouseVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A93232943F5006BB83F /* HouseVO.swift */; };
+		EF003A9723294433006BB83F /* HouseItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A9523294433006BB83F /* HouseItemTableViewCell.swift */; };
+		EF003A9823294433006BB83F /* HouseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF003A9623294433006BB83F /* HouseItemTableViewCell.xib */; };
+		EF003A9B23294475006BB83F /* SectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A9923294475006BB83F /* SectionHeaderTableViewCell.swift */; };
+		EF003A9C23294475006BB83F /* SectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF003A9A23294475006BB83F /* SectionHeaderTableViewCell.xib */; };
+		EF003A9E232944AA006BB83F /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A9D232944AA006BB83F /* HouseDetailViewController.swift */; };
+		EF003AA023294BCF006BB83F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003A9F23294BCF006BB83F /* CardView.swift */; };
+		EF003AA3232953CA006BB83F /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003AA1232953CA006BB83F /* HeaderCollectionViewCell.swift */; };
+		EF003AA4232953CA006BB83F /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF003AA2232953CA006BB83F /* HeaderCollectionViewCell.xib */; };
+		EF003AA62329576E006BB83F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF003AA52329576E006BB83F /* Extensions.swift */; };
+		EF1B8F412329F940006BDA1E /* HouseItemTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B8F402329F940006BDA1E /* HouseItemTableViewCellDelegate.swift */; };
+		EF1B8F432329FB4B006BDA1E /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B8F422329FB4B006BDA1E /* HouseModel.swift */; };
+		EF1B8F45232A0357006BDA1E /* HouseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B8F44232A0357006BDA1E /* HouseResponse.swift */; };
+		EF8C403A232B4E6400BC17DD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C4039232B4E6400BC17DD /* NetworkClient.swift */; };
+		EF8C403C232B62AA00BC17DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C403B232B62AA00BC17DD /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CA60476CC8B09EEF2CAA24A /* Pods-HouseRentingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingApp.debug.xcconfig"; path = "Target Support Files/Pods-HouseRentingApp/Pods-HouseRentingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		86E3755656D786FC8AD1E882 /* Pods-HouseRentingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingApp.release.xcconfig"; path = "Target Support Files/Pods-HouseRentingApp/Pods-HouseRentingApp.release.xcconfig"; sourceTree = "<group>"; };
+		EF003A7223294061006BB83F /* HouseRentingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseRentingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF003A7523294061006BB83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF003A7723294061006BB83F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EF003A7A23294061006BB83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF003A7C23294063006BB83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF003A7F23294063006BB83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF003A8123294063006BB83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF003A8F232943CF006BB83F /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		EF003A93232943F5006BB83F /* HouseVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVO.swift; sourceTree = "<group>"; };
+		EF003A9523294433006BB83F /* HouseItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemTableViewCell.swift; sourceTree = "<group>"; };
+		EF003A9623294433006BB83F /* HouseItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseItemTableViewCell.xib; sourceTree = "<group>"; };
+		EF003A9923294475006BB83F /* SectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EF003A9A23294475006BB83F /* SectionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EF003A9D232944AA006BB83F /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		EF003A9F23294BCF006BB83F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EF003AA1232953CA006BB83F /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF003AA2232953CA006BB83F /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF003AA52329576E006BB83F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EF1B8F402329F940006BDA1E /* HouseItemTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		EF1B8F422329FB4B006BDA1E /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		EF1B8F44232A0357006BDA1E /* HouseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseResponse.swift; sourceTree = "<group>"; };
+		EF8C4039232B4E6400BC17DD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		EF8C403B232B62AA00BC17DD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FF5E85EAC04F2FDDC430B575 /* Pods_HouseRentingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseRentingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF003A6F23294061006BB83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B7440EF57A0C86FB9C934F /* Pods_HouseRentingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A746D176C2797AD330B7F02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CA60476CC8B09EEF2CAA24A /* Pods-HouseRentingApp.debug.xcconfig */,
+				86E3755656D786FC8AD1E882 /* Pods-HouseRentingApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		140E57A540782238750E21BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF5E85EAC04F2FDDC430B575 /* Pods_HouseRentingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF003A6923294061006BB83F = {
+			isa = PBXGroup;
+			children = (
+				EF003A7423294061006BB83F /* HouseRentingApp */,
+				EF003A7323294061006BB83F /* Products */,
+				0A746D176C2797AD330B7F02 /* Pods */,
+				140E57A540782238750E21BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF003A7323294061006BB83F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A7223294061006BB83F /* HouseRentingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF003A7423294061006BB83F /* HouseRentingApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF8C4038232B4E5300BC17DD /* networkClient */,
+				EF1B8F3F2329F918006BDA1E /* delegates */,
+				EF003A8C2329428A006BB83F /* components */,
+				EF003A8B2329427E006BB83F /* utils */,
+				EF003A8A2329426F006BB83F /* cells */,
+				EF003A8923294265006BB83F /* data */,
+				EF003A882329425C006BB83F /* storyboards */,
+				EF003A872329424F006BB83F /* viewcontrollers */,
+				EF003A7523294061006BB83F /* AppDelegate.swift */,
+				EF003A7C23294063006BB83F /* Assets.xcassets */,
+				EF003A7E23294063006BB83F /* LaunchScreen.storyboard */,
+				EF003A8123294063006BB83F /* Info.plist */,
+			);
+			path = HouseRentingApp;
+			sourceTree = "<group>";
+		};
+		EF003A872329424F006BB83F /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A7723294061006BB83F /* HomeViewController.swift */,
+				EF003A9D232944AA006BB83F /* HouseDetailViewController.swift */,
+				EF8C403B232B62AA00BC17DD /* BaseViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		EF003A882329425C006BB83F /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A7923294061006BB83F /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		EF003A8923294265006BB83F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A92232943DB006BB83F /* models */,
+				EF003A91232943D4006BB83F /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EF003A8A2329426F006BB83F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A8E232943B7006BB83F /* swifts */,
+				EF003A8D232943B0006BB83F /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		EF003A8B2329427E006BB83F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A8F232943CF006BB83F /* SharedConstants.swift */,
+				EF003AA52329576E006BB83F /* Extensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EF003A8C2329428A006BB83F /* components */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A9F23294BCF006BB83F /* CardView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		EF003A8D232943B0006BB83F /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A9623294433006BB83F /* HouseItemTableViewCell.xib */,
+				EF003A9A23294475006BB83F /* SectionHeaderTableViewCell.xib */,
+				EF003AA2232953CA006BB83F /* HeaderCollectionViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		EF003A8E232943B7006BB83F /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A9923294475006BB83F /* SectionHeaderTableViewCell.swift */,
+				EF003AA1232953CA006BB83F /* HeaderCollectionViewCell.swift */,
+				EF003A9523294433006BB83F /* HouseItemTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		EF003A91232943D4006BB83F /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				EF003A93232943F5006BB83F /* HouseVO.swift */,
+				EF1B8F44232A0357006BDA1E /* HouseResponse.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		EF003A92232943DB006BB83F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B8F422329FB4B006BDA1E /* HouseModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		EF1B8F3F2329F918006BDA1E /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B8F402329F940006BDA1E /* HouseItemTableViewCellDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		EF8C4038232B4E5300BC17DD /* networkClient */ = {
+			isa = PBXGroup;
+			children = (
+				EF8C4039232B4E6400BC17DD /* NetworkClient.swift */,
+			);
+			path = networkClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF003A7123294061006BB83F /* HouseRentingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF003A8423294063006BB83F /* Build configuration list for PBXNativeTarget "HouseRentingApp" */;
+			buildPhases = (
+				EC4774D83057F5E9232AAE90 /* [CP] Check Pods Manifest.lock */,
+				EF003A6E23294061006BB83F /* Sources */,
+				EF003A6F23294061006BB83F /* Frameworks */,
+				EF003A7023294061006BB83F /* Resources */,
+				CE977DA75DF632A7ABA2C1AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseRentingApp;
+			productName = HouseRentingApp;
+			productReference = EF003A7223294061006BB83F /* HouseRentingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF003A6A23294061006BB83F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = SLH;
+				TargetAttributes = {
+					EF003A7123294061006BB83F = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = EF003A6D23294061006BB83F /* Build configuration list for PBXProject "HouseRentingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF003A6923294061006BB83F;
+			productRefGroup = EF003A7323294061006BB83F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF003A7123294061006BB83F /* HouseRentingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF003A7023294061006BB83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF003A8023294063006BB83F /* LaunchScreen.storyboard in Resources */,
+				EF003A9823294433006BB83F /* HouseItemTableViewCell.xib in Resources */,
+				EF003A9C23294475006BB83F /* SectionHeaderTableViewCell.xib in Resources */,
+				EF003A7D23294063006BB83F /* Assets.xcassets in Resources */,
+				EF003A7B23294061006BB83F /* Main.storyboard in Resources */,
+				EF003AA4232953CA006BB83F /* HeaderCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE977DA75DF632A7ABA2C1AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseRentingApp/Pods-HouseRentingApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HouseRentingApp/Pods-HouseRentingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4774D83057F5E9232AAE90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseRentingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF003A6E23294061006BB83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF003AA3232953CA006BB83F /* HeaderCollectionViewCell.swift in Sources */,
+				EF003A9B23294475006BB83F /* SectionHeaderTableViewCell.swift in Sources */,
+				EF1B8F432329FB4B006BDA1E /* HouseModel.swift in Sources */,
+				EF003A7823294061006BB83F /* HomeViewController.swift in Sources */,
+				EF1B8F45232A0357006BDA1E /* HouseResponse.swift in Sources */,
+				EF003A94232943F5006BB83F /* HouseVO.swift in Sources */,
+				EF1B8F412329F940006BDA1E /* HouseItemTableViewCellDelegate.swift in Sources */,
+				EF003A90232943CF006BB83F /* SharedConstants.swift in Sources */,
+				EF003AA62329576E006BB83F /* Extensions.swift in Sources */,
+				EF003A9723294433006BB83F /* HouseItemTableViewCell.swift in Sources */,
+				EF8C403A232B4E6400BC17DD /* NetworkClient.swift in Sources */,
+				EF003A7623294061006BB83F /* AppDelegate.swift in Sources */,
+				EF8C403C232B62AA00BC17DD /* BaseViewController.swift in Sources */,
+				EF003AA023294BCF006BB83F /* CardView.swift in Sources */,
+				EF003A9E232944AA006BB83F /* HouseDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF003A7923294061006BB83F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF003A7A23294061006BB83F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF003A7E23294063006BB83F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF003A7F23294063006BB83F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF003A8223294063006BB83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF003A8323294063006BB83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF003A8523294063006BB83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA60476CC8B09EEF2CAA24A /* Pods-HouseRentingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HouseRentingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.padc.HouseRentingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF003A8623294063006BB83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E3755656D786FC8AD1E882 /* Pods-HouseRentingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HouseRentingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.padc.HouseRentingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF003A6D23294061006BB83F /* Build configuration list for PBXProject "HouseRentingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF003A8223294063006BB83F /* Debug */,
+				EF003A8323294063006BB83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF003A8423294063006BB83F /* Build configuration list for PBXNativeTarget "HouseRentingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF003A8523294063006BB83F /* Debug */,
+				EF003A8623294063006BB83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF003A6A23294061006BB83F /* Project object */;
+}
